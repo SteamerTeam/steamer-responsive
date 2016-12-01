@@ -77,6 +77,4 @@ responsive.px2rem = function(d) {
     return val;
 }
 
-var module = module || {};
-
 module.exports = responsive;

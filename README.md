@@ -21,4 +21,4 @@ var px = responsive.rem2px("1rem");
 	- max width, default to 0. When it is set to non-zero, it means it will stops scale up if width reaches this limit
 
 ### Changelog
-* v0.1.0 finish basic features and add less px2rem function
+* v0.1.1 finish basic features and add less px2rem function
