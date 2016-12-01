@@ -12,13 +12,18 @@ gulp.task('es5', () => {
      		   .pipe(gulp.dest('./'));
 });
 
+gulp.task('less', () => {
+	return gulp.src('./src/index.less')
+     		   .pipe(gulp.dest('./'));
+});
+
 gulp.task('es6', () => {
 	return gulp.src('./src/index.js')
     		   .pipe(concat('es6.js'))
      		   .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', ['es5', 'es6'], (cb) => {
+gulp.task('default', ['es5', 'es6', 'less'], (cb) => {
 	console.log("success");
 	cb();
 });
