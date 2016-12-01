@@ -8,6 +8,10 @@
 
 var responsive = responsive || {};
 
+/**
+ * [init function]
+ * @param  {Object} opts [options]
+ */
 responsive.init = function(opts = {}) {
     var win = window,
         doc = window.document,
@@ -47,8 +51,12 @@ responsive.init = function(opts = {}) {
 
 }
 
-
-responsive.rem2px = function(e) {
+/**
+ * [rem converted to px]
+ * @param  {String} d [rem unit, ie 1rem]
+ * @return {String}   [px unit, ie 75px]
+ */
+responsive.rem2px = function(d) {
     var val = parseFloat(d) * this.rem;
     if (typeof d === 'string' && d.match(/rem$/)) {
         val += 'px';
@@ -56,6 +64,11 @@ responsive.rem2px = function(e) {
     return val;
 }
 
+/**
+ * [px converted to rem]
+ * @param  {String} d [px unit, ie 75px]
+ * @return {String}   [rem unit, ie 1rem]
+ */
 responsive.px2rem = function(d) {
     var val = parseFloat(d) / this.rem;
     if (typeof d === 'string' && d.match(/px$/)) {
