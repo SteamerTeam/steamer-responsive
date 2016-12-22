@@ -1,13 +1,14 @@
 {
   "name": "steamer-responsive",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "reponsive h5 solution",
   "main": "index.js",
   "files": [
     "index.js",
     "es6.js",
     "src",
-    "gulpfile.js"
+    "gulpfile.js",
+    "index.less"
   ],
   "scripts": {
     

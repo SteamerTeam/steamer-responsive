@@ -22,3 +22,4 @@ var px = responsive.rem2px("1rem");
 
 ### Changelog
 * v0.1.1 finish basic features and add less px2rem function
+* v0.2.0 add more less functions
